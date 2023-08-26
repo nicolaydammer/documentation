@@ -2,5 +2,9 @@ site_name: My Docs
 site_url: http://localhost:8000
 nav:
     - Home: index.md
-    - documentation hosting: documentation_server.md
+    - Documentation hosting: documentation_server.md
+    - Reverse proxy with ssl: reverse_proxy_docs.md
+    - Database and PHPMyAdmin: database.md
+    - Pihole: pihole.md
+    - Portainer: portainer.md
 theme: readthedocs
