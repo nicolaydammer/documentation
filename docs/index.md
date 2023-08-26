@@ -15,5 +15,5 @@ Please follow the rules and update the project layout below so we know what doc 
 
     mkdocs.yml    # The configuration file.
     docs/
-        index.md        # The documentation homepage.
-        documentation_server.md       # Docker documentation about all the used containers on multiple hosts and how it's configured.
+        index.md                    # The documentation homepage.
+        documentation_server.md     # Docker documentation about all the used containers on multiple hosts and how it's configured.
