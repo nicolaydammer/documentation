@@ -1,0 +1,6 @@
+site_name: My Docs
+site_url: http://localhost:8000
+nav:
+    - Home: index.md
+    - Docker: docker.md
+theme: readthedocs
