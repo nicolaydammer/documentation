@@ -1,17 +1,19 @@
-# Welcome to MkDocs
+# Welcome to dev documentation
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+Welcome to this dev documentation!
 
-## Commands
+Please follow the rules and update the project layout below so we know what doc does what.
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+## Rules
+
+* Be precise about what you document.
+* Use codeblocks.
+* Use markdown to make it read easier.
+* Update the project layout, so we know what doc is for what.
 
 ## Project layout
 
     mkdocs.yml    # The configuration file.
     docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+        index.md        # The documentation homepage.
+        documentation_server.md       # Docker documentation about all the used containers on multiple hosts and how it's configured.
