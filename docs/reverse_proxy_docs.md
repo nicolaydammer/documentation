@@ -30,6 +30,7 @@ You need the following applications installed on your server:
     `touch docker-compose.yml`
 
 3. Put the following in the docker-compose.yml
+
 ```
 version: "3"
 services:
@@ -71,4 +72,6 @@ volumes:
     
     `sudo docker-compose up -d`
 
-*It might happen that docker screws something up and bugs out. Use the following command: `sudo aa-remove-unknown`*
+*It might happen that docker screws something up and bugs out. Use the following command:
+
+   `sudo aa-remove-unknown`*
