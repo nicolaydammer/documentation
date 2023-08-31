@@ -7,5 +7,6 @@ nav:
     - Database and PHPMyAdmin: database.md
     - Pihole: pihole.md
     - Portainer: portainer.md
+    - Laravel Deploy Script: laraveldeploy.md
     - Documentation hosting: documentation_server.md
 theme: readthedocs

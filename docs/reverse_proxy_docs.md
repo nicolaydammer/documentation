@@ -74,3 +74,43 @@ volumes:
 
 *It might happen that docker screws something up and bugs out. Use the following command:*
 `sudo aa-remove-unknown`
+
+## Reverse proxy for local development
+
+1. Create a new docker network for the reverse proxy.
+
+   `sudo docker network create nginx-proxy`
+
+2. Create a folder where we put the docker-compose file
+
+   `mkdir -p ~/nginx-proxy`
+
+   `cd nginx-proxy`
+
+   `touch docker-compose.yml`
+
+3. Put the following in the docker-compose.yml
+
+```
+version: "3"
+services:
+    nginx-proxy:
+        image: jwilder/nginx-proxy
+        container_name: nginx-proxy
+        restart: always
+        ports:
+          - "80:80"
+        volumes:
+          - /var/run/docker.sock:/tmp/docker.sock:ro
+networks:
+    default:
+        external:
+            name: nginx-proxy
+```
+
+4. Start up the docker-compose script and wait for it to run
+
+   `sudo docker-compose up -d`
+
+*It might happen that docker screws something up and bugs out. Use the following command:*
+`sudo aa-remove-unknown`
